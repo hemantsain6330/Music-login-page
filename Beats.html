@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BeatFlow Music</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Login Screen -->
+<div id="loginPage" class="login-page">
+    <div class="login-box">
+        <h1>🎵 BeatFlow</h1>
+        <input type="text" placeholder="Username">
+        <input type="password" placeholder="Password">
+        <button onclick="login()">Login</button>
+    </div>
+</div>
+
+<!-- Main Website -->
+<div id="mainSite" style="display:none;">
+
+    <nav>
+        <h2>🎧 BeatFlow</h2>
+        <ul>
+            <li><a href="#" onclick="showTab('home')">Home</a></li>
+            <li><a href="#" onclick="showTab('about')">About</a></li>
+            <li><a href="#" onclick="showTab('playlist')">My Playlist</a></li>
+        </ul>
+    </nav>
+
+    <section id="home" class="tab active">
+        <h1>Feel The Music</h1>
+        <p>Your world of beats and rhythm.</p>
+        <button class="glow-btn">Explore Music</button>
+    </section>
+
+    <section id="about" class="tab">
+        <h1>About BeatFlow</h1>
+        <p>
+            BeatFlow is a modern music platform designed for music lovers.
+            Discover tracks, playlists and enjoy amazing sounds.
+        </p>
+    </section>
+
+    <section id="playlist" class="tab">
+        <h1>My Playlist</h1>
+
+        <div class="songs">
+
+            <div class="card">
+                <h3>Night Drive</h3>
+                <button>▶ Play</button>
+            </div>
+
+            <div class="card">
+                <h3>Dream Waves</h3>
+                <button>▶ Play</button>
+            </div>
+
+            <div class="card">
+                <h3>Bass Drop</h3>
+                <button>▶ Play</button>
+            </div>
+
+            <div class="card">
+                <h3>Moonlight Beat</h3>
+                <button>▶ Play</button>
+            </div>
+
+        </div>
+    </section>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
